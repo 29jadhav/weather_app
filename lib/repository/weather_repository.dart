@@ -12,7 +12,6 @@ class WeatherRepository {
       String cityName = "London";
 
       String weatherData = await dataProvider.getCurrentWeather(cityName);
-      //print(weatherData);
       final data = jsonDecode(weatherData);
       if (data['cod'] != '200') {
         throw ("Unexpected error has occured!!");

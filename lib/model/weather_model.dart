@@ -39,17 +39,6 @@ class WeatherModel {
     );
   }
 
-  // Map<String, dynamic> toMap() {
-  //   return <String, dynamic>{
-  //     'temprature': temprature,
-  //     'sky': sky,
-  //     'humidity': humidity,
-  //     'pressure': pressure,
-  //     'windSpeed': windSpeed,
-  //     'weatherListItem': weatherListItem.map((x) => x.toMap()).toList(),
-  //   };
-  // }
-
   factory WeatherModel.fromMap(Map<String, dynamic> map) {
     List<dynamic> weatherList = map['list'];
     List<WeatherListItem> wetherModelList = [];
